@@ -102,7 +102,9 @@ var inputString = "Hi, i love to use emoticon like this :) in my texts. And to r
 var parsedString = figi( inputString );
 ```
 
-The parsedString var will be `"Hi, i love to use emoticon like this <img src="./smile.png" alt=":)" class="emote" /> in my texts. And to replace these by images, i use figi ! <img src="./wink.png" alt=";)" class="emote" />"`.
+The `parsedString` var will be :
+
+> Hi, i love to use emoticon like this <img src="./smile.png" alt=":)" class="emote" /> in my texts. And to replace these by images, i use figi ! <img src="./wink.png" alt=";)" class="emote" />
 
 #### Using local config values.
 
@@ -120,7 +122,10 @@ var parsedString = figi( inputString, {
     path: "./img/emotes/"
 } );
 ```
-The parsedString var will be `"Hi, i love to use emoticon like this <img src="./img/emotes/round-smile.png" alt=":)" class="little smiley" /> in my texts. And to replace these by images, i use figi ! <img src="./img/emotes/round-wink.png" alt=";)" class="little smiley" />"`.
+
+The `parsedString` var will be :
+
+> Hi, i love to use emoticon like this <img src="./img/emotes/round-smile.png" alt=":)" class="little smiley" /> in my texts. And to replace these by images, i use figi ! <img src="./img/emotes/round-wink.png" alt=";)" class="little smiley" />
 
 ## Contributing
 
