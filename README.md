@@ -2,7 +2,7 @@
 
 > Parse emoticons in text and replace by html images... or whatever you need.
 
-[![Build Status](https://secure.travis-ci.org/Leny/figi.png?branch=master)](http://travis-ci.org/Leny/figi)
+[![Build Status](https://secure.travis-ci.org/leny/figi.png?branch=master)](http://travis-ci.org/leny/figi) [![NPM version](https://badge.fury.io/js/figi.png)](http://badge.fury.io/js/figi) [![Dependency Status](https://david-dm.org/leny/figi.png)](https://david-dm.org/leny/figi)
 
 * * *
 
@@ -133,7 +133,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-_(Nothing yet)_
+* **0.1.0**: Initial release (*15/04/14*)
 
 ## License
 (Un)licensed under the UNLICENSE, by Leny.
