@@ -1,0 +1,46 @@
+{
+  "name": "figi",
+  "version": "0.0.1",
+  "description": "Parse emoticons in text and replace by html images... or whatever you need.",
+  "keywords": [
+    "emoticon",
+    "smiley",
+    "parser",
+    "browser",
+    "amd"
+  ],
+  "homepage": "https://github.com/leny/figi",
+  "author": {
+    "name": "leny",
+    "email": "info@flatland.be",
+    "url": "http://leny.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leny/figi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leny/figi/issues"
+  },
+  "licenses": [
+    {
+      "type": "UNLICENSE",
+      "url": "https://github.com/leny/figi/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/figi",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "^0.4.4",
+    "grunt-coffeelint": "0.0.10",
+    "grunt-contrib-coffee": "^0.10.1"
+  }
+}
