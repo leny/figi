@@ -244,9 +244,9 @@ exports[ "figi : local config" ] = {
         var sAttendedStringTwo = "Hi, I love using emoticons <img src=\"./wink.png\" alt=\";)\" class=\"emote\" /> !\nSometimes, I :smile:, sometimes I <img src=\"./cry.png\" alt=\":'(\" class=\"emote\" />...\nBut I always use figi <img src=\"./lol.png\" alt=\":D\" class=\"emote\" /> !";
         test.equal( figi( sTestStringTwo ), sAttendedStringTwo, "should be '" + sAttendedStringTwo + "'." );
         var sAttendedStringThree = "Hi, I love using emoticons <i title=\"wink.png\">;)</i> ! Sometimes, I :smile:, sometimes I <i title=\"cry.png\">:'(</i>... But I always use figi <i title=\"lol.png\">:D</i> !";
-        test.equal( figi( sTestStringOne ), sAttendedStringThree, "should be '" + sAttendedStringThree + "'." );
+        test.equal( figi( sTestStringOne, oOptions ), sAttendedStringThree, "should be '" + sAttendedStringThree + "'." );
         var sAttendedStringFour = "Hi, I love using emoticons <i title=\"wink.png\">;)</i> !\nSometimes, I :smile:, sometimes I <i title=\"cry.png\">:'(</i>...\nBut I always use figi <i title=\"lol.png\">:D</i> !";
-        test.equal( figi( sTestStringTwo ), sAttendedStringFour, "should be '" + sAttendedStringFour + "'." );
+        test.equal( figi( sTestStringTwo, oOptions ), sAttendedStringFour, "should be '" + sAttendedStringFour + "'." );
 
         test.done();
     }
