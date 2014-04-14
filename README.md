@@ -97,21 +97,21 @@ figi.replacer = function( value, key ) {
 Using **figi** is very simple : 
 
 ```javascript
-var inputString = "Hi, i love to use emoticon like this :) in my texts. And to replace these by images, i use figi ! ;)";
+var inputString = "Hi, I love to use emoticon like this :) in my texts. And to replace these by images, I use figi ! ;)";
 
 var parsedString = figi( inputString );
 ```
 
 The `parsedString` var will be :
 
-> Hi, i love to use emoticon like this <img src="./smile.png" alt=":)" class="emote" /> in my texts. And to replace these by images, i use figi ! <img src="./wink.png" alt=";)" class="emote" />
+> Hi, I love to use emoticon like this <img src="./smile.png" alt=":)" class="emote" /> in my texts. And to replace these by images, I use figi ! <img src="./wink.png" alt=";)" class="emote" />
 
 #### Using local config values.
 
 You can also use **figi** with local config values when you call it, like this : 
 
 ```javascript
-var inputString = "Hi, i love to use emoticon like this :) in my texts. And to replace these by images, i use figi ! ;)";
+var inputString = "Hi, I love to use emoticon like this :) in my texts. And to replace these by images, I use figi ! ;)";
 
 var parsedString = figi( inputString, {
     catalog: {
@@ -125,7 +125,7 @@ var parsedString = figi( inputString, {
 
 The `parsedString` var will be :
 
-> Hi, i love to use emoticon like this <img src="./img/emotes/round-smile.png" alt=":)" class="little smiley" /> in my texts. And to replace these by images, i use figi ! <img src="./img/emotes/round-wink.png" alt=";)" class="little smiley" />
+> Hi, I love to use emoticon like this <img src="./img/emotes/round-smile.png" alt=":)" class="little smiley" /> in my texts. And to replace these by images, I use figi ! <img src="./img/emotes/round-wink.png" alt=";)" class="little smiley" />
 
 ## Contributing
 
