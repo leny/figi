@@ -10,9 +10,17 @@ var oSimpleCatalog = {
     ":'(": "cry.png"
 };
 
+function isEmptyObject(obj) {
+    var name;
+    for ( name in obj ) {
+        return false;
+    }
+    return true;
+}
+
 exports[ "figi : default config options" ] = {
     "figi.catalog": function( test ) {
-        test.equal( figi.catalog, {}, "should be an empty object" );
+        test.equal( isEmptyObject( figi.catalog ), isEmptyObject( {} ), "should be an empty object" );
         test.done();
     },
     "figi.classes": function( test ) {
@@ -25,9 +33,12 @@ exports[ "figi : default config options" ] = {
     },
     "figi.replacer": function( test ) {
         test.equal( typeof figi.replacer, "function", "should be a function" );
-        test.equal( figi.replacer( "test", "test" ), '<img src="./test" alt="test" class="emote" />', "should returns '<img src=\"./test\" alt=\"test\" class=\"emote\" />'" );
+        test.equal( figi.replacer.call( figi, "test", "test" ), '<img src="./test" alt="test" class="emote" />', "should returns '<img src=\"./test\" alt=\"test\" class=\"emote\" />'" );
         test.done();
-    },
+    }
+};
+
+exports[ "figi : no catalog" ] = {
     "figi( string ) with no catalog": function( test ) {
         test.equal( figi( sTestStringOne ), sTestStringOne, "should be the same string." );
         test.equal( figi( sTestStringTwo ), sTestStringTwo, "should be the same string." );
@@ -217,6 +228,5 @@ exports[ "figi : local config" ] = {
         test.equal( figi( sTestStringTwo ), sAttendedStringFour, "should be '" + sAttendedStringFour + "'." );
 
         test.done();
-    },
-
+    }
 };
