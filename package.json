@@ -1,6 +1,6 @@
 {
   "name": "figi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Parse emoticons in text and replace by html images... or whatever you need.",
   "keywords": [
     "emoticon",
