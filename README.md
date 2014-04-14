@@ -136,4 +136,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * **0.1.0**: Initial release (*15/04/14*)
 
 ## License
-(Un)licensed under the UNLICENSE, by Leny.
+(Un)licensed under the UNLICENSE
