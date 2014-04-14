@@ -10,11 +10,16 @@ do (
     root = this,
     factory = ->
 
-        figi = ->
+        figi = ( string, options = {} ) ->
+            options.catalog ?= figi.catalog ? _defaultCatalog
+            options.classes ?= figi.classes ? _defaultClasses
+            options.path ?= figi.path ? _defaultPath
+            options.replacer ?= figi.replacer ? _defaultReplacer
 
-            # TODO
+            for key, value of options.catalog when typeof key is "string"
+                string = string.replace key, -> options.replacer.call options, value, key
 
-        # default values
+            string
 
         _defaultCatalog = {}
         figi.catalog = _defaultCatalog
@@ -26,7 +31,7 @@ do (
         figi.path = _defaultPath
 
         _defaultReplacer = ( value, key ) ->
-            "<img src=\"#{ @path }#{ value }\" alt=\"#{ key }\" class=\"#{ @classes.join?( " " ) or @classes }\" />"
+            "<img src=\"#{ @path ? _defaultPath }#{ value }\" alt=\"#{ key }\" class=\"#{ @classes.join?( " " ) or @classes }\" />"
         figi.replacer = _defaultReplacer
 
         figi
