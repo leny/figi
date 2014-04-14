@@ -34,8 +34,12 @@ module.exports = ( grunt ) ->
             lib:
                 files: "src/**/*.coffee"
         coffee:
-            bin:
-                files: "src/**/*.coffee"
+            lib:
+                expand: yes
+                cwd: "src/"
+                src: [ "**/*.coffee" ]
+                dest: "lib/"
+                ext: ".js"
                 options:
                     bare: yes
         nodeunit:
