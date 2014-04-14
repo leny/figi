@@ -151,8 +151,9 @@ exports[ "figi : global replacer" ] = {
     },
 
     tearDown: function( done ) {
-        figi.replacer = function( value, key ) {
-            return '<img src="' + this.path + value + '" alt="' + key + '" class="' + ( (typeof (_base = this.classes).join === "function" ? _base.join( " " ) : void 0) || this.classes ) + '" />';
+        figi.replacer = function(value, key) {
+            var _base, _ref;
+            return "<img src=\"" + ((_ref = this.path) != null ? _ref : _defaultPath) + value + "\" alt=\"" + key + "\" class=\"" + ((typeof (_base = this.classes).join === "function" ? _base.join(" ") : void 0) || this.classes) + "\" />";
         };
         done();
     },
