@@ -14,6 +14,21 @@ do (
 
             # TODO
 
+        # default values
+
+        _defaultCatalog = {}
+        figi.catalog = _defaultCatalog
+
+        _defaultClasses = "emote"
+        figi.classes = _defaultClasses
+
+        _defaultPath = "./"
+        figi.path = _defaultPath
+
+        _defaultReplacer = ( value, key ) ->
+            "<img src=\"#{ @path }#{ value }\" alt=\"#{ key }\" class=\"#{ @classes.join?( " " ) or @classes }\" />"
+        figi.replacer = _defaultReplacer
+
         figi
 
 ) ->
