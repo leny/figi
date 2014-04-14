@@ -80,6 +80,11 @@ exports[ "figi : global catalog" ] = {
 
 exports[ "figi : global classes" ] = {
 
+    setUp: function( done ) {
+        figi.catalog = oSimpleCatalog;
+        done();
+    },
+
     tearDown: function( done ) {
         figi.classes = "emote";
         done();
@@ -114,6 +119,11 @@ exports[ "figi : global classes" ] = {
 
 exports[ "figi : global base path" ] = {
 
+    setUp: function( done ) {
+        figi.catalog = oSimpleCatalog;
+        done();
+    },
+
     tearDown: function( done ) {
         figi.path = "./";
         done();
@@ -134,6 +144,11 @@ exports[ "figi : global base path" ] = {
 };
 
 exports[ "figi : global replacer" ] = {
+
+    setUp: function( done ) {
+        figi.catalog = oSimpleCatalog;
+        done();
+    },
 
     tearDown: function( done ) {
         figi.replacer = function( value, key ) {
@@ -157,6 +172,11 @@ exports[ "figi : global replacer" ] = {
 };
 
 exports[ "figi : local config" ] = {
+
+    setUp: function( done ) {
+        figi.catalog = oSimpleCatalog;
+        done();
+    },
 
     "figi with local catalog": function( test ) {
         var oOptions = {
