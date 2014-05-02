@@ -1,8 +1,8 @@
 # figi 
 
-> Parse emoticons in text and replace by html images... or whatever you need.
+![NPM version](http://img.shields.io/npm/v/figi.svg) ![Build Status](http://img.shields.io/travis/leny/figi.svg) ![Dependency Status](https://david-dm.org/leny/figi.svg) ![Downloads counter](http://img.shields.io/npm/dm/figi.svg)
 
-[![Build Status](https://secure.travis-ci.org/leny/figi.png?branch=master)](http://travis-ci.org/leny/figi) [![NPM version](https://badge.fury.io/js/figi.png)](http://badge.fury.io/js/figi) [![Dependency Status](https://david-dm.org/leny/figi.png)](https://david-dm.org/leny/figi)
+> Parse emoticons in text and replace by html images... or whatever you need.
 
 * * *
 
