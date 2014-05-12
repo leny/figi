@@ -16,23 +16,18 @@ do (
             options.path ?= figi.path ? _defaultPath
             options.replacer ?= figi.replacer ? _defaultReplacer
 
-            for key, value of options.catalog when typeof key is "string"
-                string = string.replace key, -> options.replacer.call options, value, key
+            string = string.replace key, ( -> options.replacer.call options, value, key ) for key, value of options.catalog when typeof key is "string"
 
             string
 
-        _defaultCatalog = {}
-        figi.catalog = _defaultCatalog
+        figi.catalog = ( _defaultCatalog = {} )
 
-        _defaultClasses = "emote"
-        figi.classes = _defaultClasses
+        figi.classes = ( _defaultClasses = "emote" )
 
-        _defaultPath = "./"
-        figi.path = _defaultPath
+        figi.path = ( _defaultPath = "./" )
 
-        _defaultReplacer = ( value, key ) ->
+        figi.replacer = _defaultReplacer = ( value, key ) ->
             "<img src=\"#{ @path ? _defaultPath }#{ value }\" alt=\"#{ key }\" class=\"#{ @classes.join?( " " ) or @classes }\" />"
-        figi.replacer = _defaultReplacer
 
         figi
 
