@@ -75,6 +75,14 @@ exports[ "figi : global catalog" ] = {
         test.equal( figi( sTestStringTwo ), sAttendedStringTwo, "should be '" + sAttendedStringTwo + "'." );
 
         test.done();
+    },
+
+    "figi( string ) with catalog and multiple same emote": function( test ) {
+        var sTestStringMultiple = "Hi, this is a multiple emote : ;) ;) ;)"
+        var sAttendedStringMultiple = "Hi, this is a multiple emote : <img src=\"./wink.png\" alt=\";)\" class=\"emote\" /> <img src=\"./wink.png\" alt=\";)\" class=\"emote\" /> <img src=\"./wink.png\" alt=\";)\" class=\"emote\" />";
+        test.equal( figi( sTestStringMultiple ), sAttendedStringMultiple, "should be '" + sAttendedStringMultiple + "'." );
+
+        test.done();
     }
 };
 
