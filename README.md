@@ -137,6 +137,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * **0.1.1**: Optimisation (*12/05/14*)
 * **0.1.2**: Fix issue #1 (*31/05/14*)
 * **0.1.3**: Remove support for node 0.8 (*31/05/14*)
+* **0.1.4**: Updating dependencies (*12/10/14*)
 
 ## License
 (Un)licensed under the UNLICENSE
