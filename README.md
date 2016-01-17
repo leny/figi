@@ -8,7 +8,7 @@
 
 ## Warning: breaking changes with version `1.0.0`
 
-With version `1.0.0`, **figi** drop the UMD implementation to use the ES6 module definition.  
+With version `1.0.0`, **figi** drop the UMD implementation and node version prior to 4.0 to use the ES6 module definition.  
 For now, it uses Babel to transpile to ES5.
 
 So, if you use ES5, you should require figi with `var figi = require( "figi" ).default;`, and, if you use ES6, you should import figi with `import figi from "figi";`.
@@ -140,11 +140,12 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-* **0.1.0**: Initial release (*15/04/14*)
-* **0.1.1**: Optimisation (*12/05/14*)
-* **0.1.2**: Fix issue #1 (*31/05/14*)
-* **0.1.3**: Remove support for node 0.8 (*31/05/14*)
+* **1.0.0**: Drop UMD support, use ES6 module definition (*17/01/16*)
 * **0.1.4**: Updating dependencies (*12/10/14*)
+* **0.1.3**: Remove support for node 0.8 (*31/05/14*)
+* **0.1.2**: Fix issue #1 (*31/05/14*)
+* **0.1.1**: Optimisation (*12/05/14*)
+* **0.1.0**: Initial release (*15/04/14*)
 
 ## License
 (Un)licensed under the UNLICENSE
