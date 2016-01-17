@@ -30,7 +30,7 @@
   ],
   "main": "lib/figi",
   "engines": {
-    "node": ">= 0.12"
+    "node": ">= 4.0"
   },
   "scripts": {
     "test": "grunt nodeunit"
