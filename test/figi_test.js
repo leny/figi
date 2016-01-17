@@ -1,6 +1,6 @@
 "use strict";
 
-var figi = require( "../lib/figi.js" );
+var figi = require( "../lib/figi.js" ).default;
 
 var sTestStringOne = "Hi, I love using emoticons ;) ! Sometimes, I :smile:, sometimes I :'(... But I always use figi :D !";
 var sTestStringTwo = "Hi, I love using emoticons ;) !\nSometimes, I :smile:, sometimes I :'(...\nBut I always use figi :D !";
