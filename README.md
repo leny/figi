@@ -1,4 +1,4 @@
-# figi 
+# figi
 
 ![NPM version](http://img.shields.io/npm/v/figi.svg) ![Build Status](http://img.shields.io/travis/leny/figi.svg) ![Dependency Status](https://david-dm.org/leny/figi.svg) ![Downloads counter](http://img.shields.io/npm/dm/figi.svg)
 
@@ -6,11 +6,18 @@
 
 * * *
 
+## Warning: breaking changes with version `1.0.0`
+
+With version `1.0.0`, **figi** drop the UMD implementation to use the ES6 module definition.  
+For now, it uses Babel to transpile to ES5.
+
+So, if you use ES5, you should require figi with `var figi = require( "figi" ).default;`, and, if you use ES6, you should import figi with `import figi from "figi";`.
+
+* * *
+
 ## Getting Started
 
 ### From **browsers** and **node**.
-
-**figi** use the [umd](https://github.com/umdjs/umd) implementation to be usable from anywhere (client, server, ...).
 
 Install the module with: `npm install figi`
 
@@ -19,7 +26,7 @@ Install the module with: `npm install figi`
 See **documentation** for more informations.
 
 ```javascript
-var figi = require( "figi" );
+var figi = require( "figi" ).default;
 
 figi.catalog = {
     ":)": "smile.png",
@@ -44,7 +51,7 @@ At least, **figi** needs a catalog of strings to find and replace in your string
 
 By default, the catalog of **figi** is *empty* : it search and replace nothing.
 
-To define it globaly, you can pass your catalog to `figi.catalog`, as in the following example : 
+To define it globaly, you can pass your catalog to `figi.catalog`, as in the following example :
 
 ```javascript
 figi.catalog = {
@@ -94,7 +101,7 @@ figi.replacer = function( value, key ) {
 
 #### Using globally-setted config values.
 
-Using **figi** is very simple : 
+Using **figi** is very simple :
 
 ```javascript
 var inputString = "Hi, I love to use emoticon like this :) in my texts. And to replace these by images, I use figi ! ;)";
@@ -108,7 +115,7 @@ The `parsedString` var will be :
 
 #### Using local config values.
 
-You can also use **figi** with local config values when you call it, like this : 
+You can also use **figi** with local config values when you call it, like this :
 
 ```javascript
 var inputString = "Hi, I love to use emoticon like this :) in my texts. And to replace these by images, I use figi ! ;)";
