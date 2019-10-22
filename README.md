@@ -1,6 +1,6 @@
 # figi
 
-![NPM version](http://img.shields.io/npm/v/figi.svg) ![Build Status](http://img.shields.io/travis/leny/figi.svg) ![Dependency Status](https://david-dm.org/leny/figi.svg) ![Downloads counter](http://img.shields.io/npm/dm/figi.svg)
+![NPM version](http://img.shields.io/npm/v/figi.svg) ![Build Status](http://img.shields.io/travis/leny/figi.svg) ![Dependency Status](https://david-dm.org/leny/figi.svg) ![Downloads counter](http://img.shields.io/npm/dm/figi.svg) [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 > Parse emoticons in text and replace by html images... or whatever you need.
 
